@@ -23,7 +23,7 @@ public class SpringFileUploadController {
 		  String fileName = file.getOriginalFilename();
 		  
 		  try {
-			file.transferTo( new File("C:\\upload\\" + fileName));
+			file.transferTo( new File("C:\\Users\\bijay\\OneDrive\\Desktop\\udemy\\" + fileName));
 		} catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		} 
